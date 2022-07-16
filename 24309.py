@@ -1,0 +1,5 @@
+a=input()
+b=input()
+c=input()
+a, b, c=map(int, (a, b, c))
+print((b-c)//a)
