@@ -1,0 +1,1 @@
+print(sorted([int(input()) for _ in (1,2,3)])[1])
