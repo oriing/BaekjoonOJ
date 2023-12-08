@@ -29,11 +29,11 @@ void gos(){
 	sizee=0;start=0;
 	memset(d, 0, sizeof(d));
 	for(int i=0;i<n;i++){
-		scanf("%s %d", inw[i], ina+i);
+		scanf("%s %d", inw[i], &ina[i]);
 		if(inw[i][0]=='I'){
 			tes++;
 		} else {
-			if(tes) tes--;
+			if(tes>0) tes--;
 		}
 	}
 	
@@ -81,6 +81,8 @@ int main(){
 	scanf("%d", &t);
 	for(int i=0;i<t;i++){
 		gos();
+		while(!mind.empty()) mind.pop();
+		while(!maxd.empty()) maxd.pop();
 	}
 	
 	return 0;
