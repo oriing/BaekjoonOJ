@@ -1,0 +1,7 @@
+s = input()
+for i in range(len(s)):
+    if s[i] != s[-i-1]:
+        print(0)
+        break
+else:
+    print(1)
