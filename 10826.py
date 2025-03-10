@@ -1,11 +1,9 @@
-n=int(input())
-a=0
-b=1
-if (n==1): printf("1")
-elif (n==0): printf("0")
-else:
-    for i in range(n-1):
-        t=a+b
-        a=b
-        b=t
-    print(b)
+n = int(input())
+a, b = 0, 1
+for i in range(1, n):
+    t = b
+    b += a
+    a = t
+
+if n==0: print(a)
+else: print(b)
